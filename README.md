@@ -10,4 +10,4 @@ One new free manager project.
 
 TODO
 ----
-- everthing
+- everything
