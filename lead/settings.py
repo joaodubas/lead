@@ -143,8 +143,10 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
 
     #apps
+    'lead',
     'apps',
     'apps.core',
+    'apps.contact',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -181,5 +183,5 @@ THUMBNAIL_PREFIX = 'thumbs/'
 # Local settings
 try:
     execfile('lead/settings_local.py')
-except ImportError:
+except IOError:
     pass
