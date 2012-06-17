@@ -5,7 +5,7 @@ Version: 0.01
 
 About
 -----
-One new free manager project.
+One new free project manager.
 
 
 TODO
