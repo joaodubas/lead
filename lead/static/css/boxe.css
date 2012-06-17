@@ -1,0 +1,70 @@
+/* Boxes
+---------------------------------------------------------------------*/
+
+.box {
+	padding: 8px;
+	margin-bottom:8px;
+	color:#555;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background:#eee;
+}
+.box-info {
+	padding-left: 32px;
+	border-top:1px solid #B8E2FB;
+	border-bottom:1px solid #B8E2FB;
+	background:#E8F6FF url("../img/information.png") no-repeat 8px 50%;
+}
+.box-warning{
+	padding-left: 32px;
+	border-top:1px solid #F2DD8C;
+	border-bottom:1px solid #F2DD8C;
+	background:#FFF5CC url("../img/error.png") no-repeat 8px 50%;
+}
+.box-error{
+	padding-left: 32px;
+	border-top:1px solid #F8ACAC;
+	border-bottom:1px solid #F8ACAC;
+	background:#FFD1D1 url("../img/exclamation.png") no-repeat 8px 50%;
+}
+.box-error-msg{
+	margin-top:-8px;
+	background:#FFF1F1;
+	border-top:0 none;
+	border-bottom:1px solid #FDDCDC;
+	color:#664B4B;
+	padding:12px;
+}
+.box-error-msg ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.box-success{
+	padding-left: 32px;
+	border-top:1px solid #BBDF8D;
+	border-bottom:1px solid #BBDF8D;
+	background:#EAF7D9 url("../img/accept.png") no-repeat 8px 50%;
+}
+
+.box a:hover {
+	background: transparent !important;
+}
+
+.box a.close {
+	float: right;
+	border: 0 none !important;
+	font-weight: bold;
+	color: #666 !important;
+}
+.box-info a.close {
+	color: #395594 !important;
+}
+.box-warning a.close {
+	color: #D6A23D !important;
+}
+.box-error a.close {
+	color: #CF563D !important;
+}
+.box-success a.close {
+	color: #238221 !important;
+}

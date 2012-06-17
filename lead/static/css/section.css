@@ -1,0 +1,143 @@
+/***
+ * Section itens
+ */
+
+.wrapper {
+    padding-top:10px;
+}
+
+section.itens article {
+    border: 1px solid #efefef;
+    margin: 0 0 10px 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+section.itens article input[type=checkbox] {
+    float:left;
+    margin:5px;
+}
+
+section.itens article h4 {
+   margin-left:10px; 
+}
+
+section.itens article span.right {
+    float:right;
+}
+
+section.itens article span{
+    display:inline-block;
+}
+
+section.itens article label{
+    display:inline-block;
+    color:#333;
+}
+
+
+section.itens article div {
+   margin:5px 0px;
+   color:#333;
+}
+
+section.itens article * {
+    padding: 2px 5px;
+}
+
+.vote {
+    clear: both;
+    background: -moz-linear-gradient(-90deg, #5A5A64, #383840) repeat scroll 0 0 transparent;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 -1px 0 #8D8D94, 0 1px 1px #0B0B0C;
+    color: #D6D6E7;
+    display: block;
+    font: 20px/28px "BebasNeueRegular", Helvetica, Arial, sans-serif;
+    height: 30px;
+    position: relative;
+    width: 120px;
+    z-index: 5;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vote:hover {
+    color: #FFF;
+}
+
+.number {
+    background: -moz-linear-gradient(center top, #141212 0%, #232323 50%, #0A0E0A 50%, #0A0809 100%) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #262626;
+    border-left: 1px solid #000000;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 1px solid #000000;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 28px;
+    margin: 0 1px;
+    position: relative;
+    text-align: center;
+    width: 30px;
+    padding: 0px;
+}
+
+.number hr, section.itens article .number hr {
+    position: absolute;
+    border: 1px solid #000;
+    background: #000;
+    top: 16px;
+    width: 92%;
+    z-index: 9999;
+    padding: 0;
+}
+
+section.itens article div.countdown {
+    clear: both;
+    padding: 5px;
+    height: 30px;
+}
+
+
+section.itens article figure {
+    text-align: center;
+}
+
+section.itens article hgroup {
+    background: #efefef;
+    padding: 0px;
+}
+
+
+section {
+    min-height: 300px;
+    color:#000;
+}
+
+section ul li {
+    list-style: none;
+}
+
+section ul {
+    padding-left: 10px;
+}
+
+section.article {
+    border: 0px;
+    min-height: 300px;
+    color:#000;
+}
+
+section#item {
+    border-right: 1px solid #DDD;
+    width: 750px;
+    min-height: 300px;
+}
+

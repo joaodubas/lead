@@ -1,0 +1,125 @@
+/* Forms
+---------------------------------------------------------------------*/
+
+form {
+	overflow:auto;
+}
+
+input {
+    -webkit-border-radius: .3em; 
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+}
+
+input:focus,textarea:focus,select:focus {
+	outline-width:0; /* No outline border for Safary */
+	
+}
+input[type="text"],input[type="password"],input[type="select"],input[type="search"],input[type="file"],input[type="date"],textarea,select {
+	border-color:#C4C4C4 #E9E9E9 #E9E9E9 #C4C4C4;
+	border-style:solid;
+	border-width:1px;
+	padding:4px;
+	color:#777;
+}
+textarea {
+	line-height:18px;
+	overflow:auto;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+textarea.small {
+	height:5.5em;
+}
+textarea.medium {
+	height:10em;
+}
+textarea.large {
+	height:20em;
+}
+input.half,select.half,textarea.half {
+	width:50%;
+}
+input.full,select.full,textarea.full {
+	width:97%;
+}
+input.title {
+	font-size:20px;
+}
+input[type="submit"],input[type="reset"],input[type="button"] {
+	margin-bottom:0;
+}
+input:focus,textarea:focus {
+	-moz-box-shadow:0 1px 1px rgba(196,196,196,0.5);
+	-webkit-box-shadow:0 1px 1px rgba(196,196,196,0.5);
+	box-shadow:0 1px 1px rgba(196,196,196,0.5);
+	-webkit-focus-ring-color:none;
+	border-color:#c4c4c4;
+	background-color:#FFFFF0;
+}
+fieldset {
+	border:0 none;
+	border-top:1px solid #ddd;
+	margin:10px 0;
+	padding:10px 0;
+	position:relative;
+}
+legend {
+	background:#fff;
+	color:#93BB3A;
+	font-weight:bold;
+	padding:0 6px 0 0;
+}
+label {
+	font-size:11px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:left;
+}
+label.required:before {
+	content:"*";
+	color:red;
+	font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+}
+label.ok {
+	background:url("../img/valid.gif") no-repeat;
+	padding-left:16px;
+}
+label.error {
+	color:#d00;
+	text-transform:none;
+	margin-left:6px;
+}
+label.choice {
+	vertical-align:middle;
+	font-weight:normal;
+	text-transform:none;
+}
+fieldset small {
+	color:#999;
+	font-size:11px;
+	display: block;
+}
+
+form p {
+    margin:3px 0;
+}
+
+
+form ul.errorlist {
+    margin:0px;
+    padding:0px;
+}
+
+form ul.errorlist li {
+    background:#bf2a2a;
+    padding:5px;
+    color:#fff;
+    font-weight:bolder;
+    width:30%;
+    
+    margin:3px 0px;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}

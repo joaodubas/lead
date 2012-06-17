@@ -1,0 +1,100 @@
+/**********************************************
+Header
+***********************************************/
+#banner {
+    margin: 0 auto;
+    padding: 1em 0 1em 1em;
+    height:60px;
+}
+
+#banner h1 {
+    font-family: 'Actor', 'Arial', cursive;
+    letter-spacing: 1px;
+    font-size: 2.8em;
+    line-height: 1.1em;
+    display: inline;
+    color:#fff;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+    width: 427px;
+}
+
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #83C744;
+    text-shadow: none;
+}
+
+#banner h1 strong {
+    font-size: 0.36em;
+    font-weight: normal;
+}
+
+
+header section.login {
+    padding: 0px;
+    float: right;
+    min-height: 50px;
+    width: 500px;
+    border: 1px solid #efefef;
+}
+
+header section.login article {
+    padding: 0px;
+}
+
+header nav {
+    clear: both;
+}
+
+aside#box {
+    float: right;
+    clear: both;
+    width:750px;
+    text-align:right;
+}
+
+aside#box ul li {
+    display: inline-block;
+}
+
+aside#box ul li label {
+   display: block;
+   color:#fff;
+}
+
+aside#box ul li button{
+    padding:10px;
+    font-weight:bolder;
+}
+
+aside#box ul li input{
+    width: 400px;
+    padding:8px;
+}
+
+aside#box ul li input#id_username {
+    width: 120px;
+}
+
+
+aside#box ul li input#id_password {
+    width: 120px;
+}
+
+aside#box ul.errorlist {
+    position:absolute;
+    top:-25px;
+    display:block;
+}
+ 
+aside#box ul.errorlist li {
+    color:#fff;
+    font-weight: bold;
+}

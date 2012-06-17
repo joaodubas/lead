@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block wrapper %}
+        <section class='article'>
+            <article>
+                <h3>About Lead Project Manager</h3>
+
+            </article>
+
+            <article>
+                <h3>Alpha version</h3>
+                <ul>
+                    <li>-.-</li>
+                </ul>
+            </article>
+
+            {% if not user.is_authenticated %}
+            <article>
+                {% include 'signin.html' %}
+            </article>
+            {% else %}
+                Loggged: {{ user }}
+            {% endif %}
+
+        </section>
+{% endblock wrapper %}

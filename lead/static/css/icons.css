@@ -1,0 +1,26 @@
+/* Icons
+---------------------------------------------------------------------*/
+
+.icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	float:left;
+	margin-right: 4px;
+}
+.icon-add {
+	background:url("../img/add.png") no-repeat;
+}
+.icon-ok {
+	background:url("../img/accept.png") no-repeat;
+}
+.icon-cancel {
+	background:url("../img/cancel.png") no-repeat;
+}
+
+.btn-special .icon {
+	margin-top: 2px
+}

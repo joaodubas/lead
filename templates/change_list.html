@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block js %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /* datatable */
+            $('#example').dataTable();
+        };
+    </script>
+{% endblock js %}
+
+{% block wrapper %}
+    <section>
+        <h3>Data tables</h3>
+        <article>
+
+            <table width="100%">
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Data</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for content in contents.object_list %}
+                    <tr class="{% cycle 'color' '' %}">
+                        <td>{{ content.name }}</td>
+                        <td>{{ content.department }}</td>
+                        <td>{{ content.get_phone }}</td>
+                        <td>{{ content.get_email }}</td>
+                        <td>{{ content.create_date|date:'d/m/Y' }}</td>
+                    </tr>
+                {% empty %}
+                    <tr class="xbox empty">
+                        <td colspan="5">No register</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </article>
+
+    </section>
+{% endblock wrapper %}

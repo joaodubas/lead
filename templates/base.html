@@ -1,0 +1,61 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'/>
+    {% block meta %}
+        <meta name="description" content="Comprehensive Documentation and information about HTML.">
+        <meta name="keywords" content="HTML, tags, commands">
+    {% endblock meta %}
+    <title>Lead Project Manager</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/typography.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/hack.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/section.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/button.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/form.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/footer.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+    {% block extra_header %}
+    {% endblock %}
+</head>
+<body id="index" class="home">
+{% block body %}
+<header id="navebar">
+    {% block nav %}
+        <nav>
+            {% include 'nav.html' %}
+        </nav>
+    {% endblock nav %}
+    {% block account %}
+    {% endblock account %}
+</header>
+<section id="wrapper">
+    <header id="banner">
+        {% block banner %}
+            <h1>Lead Project Manager</h1>
+        {% endblock banner %}
+        <div class="clear"></div>
+    </header>
+    {% block wrapper %}
+
+    {% endblock wrapper %}
+</section>
+{% endblock body %}
+<footer>
+    {% block footer %}
+     {% include 'footer.html' %}
+    {% endblock footer %}
+</footer>
+</body>
+<script src="{{ STATIC_URL }}js/jquery-1.6.2.min.js"></script>
+<script src="{{ STATIC_URL }}js/base.js"></script>
+<script src="{{ STATIC_URL }}js/django.js"></script>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+{% block js %}
+{% endblock js %}
+</html>

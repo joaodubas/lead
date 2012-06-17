@@ -1,0 +1,13 @@
+{% load i18n %}
+<aside id='user_info'>
+    <form class="search" method="post" name="search"
+        target="_self" action="">{% csrf_token %}
+        <ul>
+            <li>
+                <input id='search' name='search' type='text' value=''>
+            </li>
+            <li class="clear">
+            </li>
+        </ul>
+    </form>
+</aside>

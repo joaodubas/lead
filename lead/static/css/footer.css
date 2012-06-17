@@ -1,0 +1,27 @@
+footer {
+    margin-top:50px;
+    clear: both;
+    display: block;
+    background:#000;
+    border-top:2px solid #CCC;
+    min-height:30px;
+    bottom:0;
+    width:100%;
+    position:relative;
+}
+
+footer section h4 {
+    color:#fff;
+    padding: 10px 0;
+}
+
+footer section textarea{
+    width:50%;
+    height:80px;
+}
+
+
+footer section textarea, footer section button {
+    display:block;
+    margin:5px 0px;
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block wrapper %}
+<h2>Contato</h2>
+<form class="contact" id='contact' method="post"
+    enctype="multipart/form-data" target="_self"
+    action="{% url contact %}">
+    {% csrf_token %}
+    <br>
+    <ul>
+        {{ form.as_ul }}
+        <li>
+        <br>
+        <br>
+        <button type="submit">{% trans 'Submit' %}</button>
+        </li>
+    </ul>
+</form>
+{% endblock wrapper %}

@@ -1,0 +1,14 @@
+{% load i18n %}
+<form class="signin" method="post" name="signin"
+    target="_self" action="">
+    {% csrf_token %}
+    <ul>
+        {{ form.as_ul }}
+        <li class="clear">
+            &nbsp;
+        </li>
+        <li>
+            <button type="submit">{% trans 'Sign In' %}</button>
+        </li>
+    </ul>
+</form>

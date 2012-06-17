@@ -1,0 +1,15 @@
+{% load i18n %}
+{% if user.is_authenticated %}
+    <ul>
+        <li><a href="#">{% trans 'Dashboard' %}</a></li>
+        <li><a href="#">{% trans 'Projects' %}</a></li>
+        <li><a href="#">{% trans 'Profile' %}</a></li>
+        <li><a href="{% url signout %}">{% trans 'Sair' %}</a></li>
+    </ul>
+{% else %}
+    <ul>
+        <li><a href="{% url home %}">{% trans 'Home' %}</a></li>
+        <li><a href="#">{% trans 'Tour' %}</a></li>
+        <li><a href="{% url contact %}">{% trans 'Contact' %}</a></li>
+    </ul>
+{% endif %}
