@@ -11,6 +11,7 @@ BASEDIR = os.path.realpath(os.path.join(os.path.dirname(__file__), os.path.pardi
 ADMINS = (
     ('Valder Gallo', 'valdergallo@gmail.com'),
 )
+
 MANAGERS = ADMINS
 
 DATABASES = {
@@ -80,7 +81,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    (os.path.join(BASEDIR, 'media'),
+    (os.path.join(BASEDIR, 'media')),
 )
 
 ADMIN_MEDIA_PREFIX = '/static/admin/'
