@@ -140,6 +140,10 @@ INSTALLED_APPS = (
     #extra
     'django_extensions',
     'sorl.thumbnail',
+
+    #apps
+    'apps',
+    'apps.core',
 )
 
 # A sample logging configuration. The only tangible logging
