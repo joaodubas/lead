@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     #extra
     'django_extensions',
     'sorl.thumbnail',
+    'gravatar',
 
     #apps
     'lead',

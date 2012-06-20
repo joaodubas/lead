@@ -1,10 +1,26 @@
-{% load i18n %}
+{% load i18n gravatar %}
+
+<h4>Lead Project Manager</h4>
+<div class='col_right'>
+    <form action="/search" method="get" accept-charset="utf-8">
+        <span class='search_icon'>
+            <input type="text" name="search" value="" placeholder="Search...">
+        </span>
+    </form>
+</div>
+
 {% if user.is_authenticated %}
     <ul>
-        <li><a href="#">{% trans 'Dashboard' %}</a></li>
         <li><a href="#">{% trans 'Projects' %}</a></li>
-        <li><a href="#">{% trans 'Profile' %}</a></li>
-        <li><a href="{% url signout %}">{% trans 'Sair' %}</a></li>
+        <li><a href="#">{% trans 'Tickets' %}</a>
+        </li>
+        <li><img src="{% gravatar_for_email user.email 25%}" alt="{{ user.username }}">
+            <ol>
+                <li><a href="#">{% trans 'Profile' %}</a></li>
+                <li><a href="{% url signout %}">{% trans 'Sair' %}</a></li>
+            </ol>
+
+        </li>
     </ul>
 {% else %}
     <ul>
