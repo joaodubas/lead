@@ -15,7 +15,6 @@ from django_dynamic_fixture import G
 class ManagerTest(TestCase):
 
     def setUp(self):
-        #create 8 elements Defaults
         G(TestDefaultFields, n=4)
 
     def test_basic_addition_default(self):

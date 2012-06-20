@@ -145,9 +145,11 @@ INSTALLED_APPS = (
 
     #apps
     'lead',
-    'apps',
     'apps.core',
     'apps.contact',
+    'apps.comment',
+    'apps.members',
+    'apps.users',
 )
 
 # A sample logging configuration. The only tangible logging

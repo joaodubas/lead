@@ -32,7 +32,7 @@ class UserProfile(DefaultFields):
 def create_user_profile(sender, instance, created, **kwargs):
     "Signal to auto create user"
     if created:
-        django_token = str(settings.token + instance.email)
+        django_token = str(settings.SECRET_KEY + instance.email)
         instance.token = hashlib.md5(django_token).hexdigest()
         django_initials = str(instance.first_name[:1] + instance.last_name[:1]).upper()
         instance.initials = django_initials
