@@ -22,7 +22,6 @@ class UserProfile(DefaultFields):
     user = models.OneToOneField(User)
     initials = models.CharField(max_length=2, db_index=True)
     bio = models.TextField(null=True, blank=True)
-    avatar = models.ImageField(upload_to='avatar/%Y/%m/%d')
     token = models.CharField(max_length=255, null=True, blank=True)
 
     def get_absolute_url(self):
