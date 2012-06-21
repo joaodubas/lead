@@ -148,7 +148,9 @@ INSTALLED_APPS = (
     'apps.core',
     'apps.contact',
     'apps.comment',
+    'apps.tag',
     'apps.members',
+    'apps.ticket',
     'apps.users',
 )
 
